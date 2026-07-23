@@ -1,0 +1,213 @@
+/* ============================================================
+   Cynthia's Recipe Book — Spiced / Autumn theme
+   Warm palette: paprika #B4472B, honey #D98A2B, clay #C97B4A,
+   cream #FBF1E3, ink #3A2A1F
+   ============================================================ */
+
+.root {
+    -fx-background-color: #FBF1E3;
+    -fx-font-family: "Segoe UI", "Helvetica Neue", "Arial", sans-serif;
+}
+
+.app-title { -fx-font-size: 34px; -fx-font-weight: bold; -fx-text-fill: #3A2A1F; }
+.subtitle  { -fx-text-fill: #7A6353; -fx-font-size: 14px; }
+.count-title { -fx-font-size: 22px; -fx-font-weight: bold; -fx-text-fill: #3A2A1F; }
+
+/* Search box */
+.search-field {
+    -fx-background-color: #FFFDF9;
+    -fx-background-radius: 24;
+    -fx-border-color: #E7C9A6;
+    -fx-border-radius: 24;
+    -fx-padding: 10 16;
+    -fx-font-size: 14px;
+    -fx-prompt-text-fill: #A08A78;
+    -fx-text-fill: #3A2A1F;
+}
+
+/* Category tabs */
+.tab-button {
+    -fx-background-color: #FFFDF9;
+    -fx-text-fill: #7E6650;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-padding: 7 16;
+    -fx-cursor: hand;
+    -fx-background-radius: 16;
+    -fx-border-color: #E7C9A6;
+    -fx-border-width: 1;
+    -fx-border-radius: 16;
+}
+.tab-button:hover { -fx-background-color: #F6E6D2; -fx-text-fill: #B4472B; }
+.tab-active {
+    -fx-background-color: #F3D8BE;
+    -fx-text-fill: #B4472B;
+    -fx-font-weight: bold;
+    -fx-border-color: #E4B98E;
+}
+
+/* Recipe cards */
+.recipe-card {
+    -fx-background-color: #FFFDF9;
+    -fx-background-radius: 22;
+    -fx-padding: 12;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(120,80,40,0.12), 12, 0, 0, 4);
+}
+.recipe-card:hover {
+    -fx-effect: dropshadow(gaussian, rgba(120,80,40,0.22), 16, 0, 0, 6);
+}
+
+.emoji-panel {
+    -fx-background-radius: 16;
+    -fx-background-color: linear-gradient(to bottom right, #F0C69A, #E8BBA0);
+}
+.emoji-panel-detail {
+    -fx-background-radius: 22;
+    -fx-background-color: linear-gradient(to bottom right, #E8BBA0, #F3D8BE);
+}
+.emoji-glyph { -fx-font-size: 60px; }
+.emoji-glyph-detail { -fx-font-size: 110px; }
+
+.card-name { -fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #3A2A1F; }
+.card-desc { -fx-font-size: 13px; -fx-text-fill: #7A6353; }
+
+/* Chips + badges */
+.chip { -fx-background-radius: 14; -fx-padding: 4 8; -fx-font-size: 11px; -fx-text-fill: #3A2A1F; }
+.chip-rating     { -fx-background-color: #F6E2BE; -fx-font-weight: bold; }
+.chip-time       { -fx-background-color: #EAD7C0; }
+.chip-difficulty { -fx-background-color: #F0C69A; }
+
+.badge {
+    -fx-background-color: #FFFDF9;
+    -fx-background-radius: 14;
+    -fx-padding: 4 10;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #3A2A1F;
+}
+
+/* Colored badge variants (Option 3 — bold filled) */
+.badge-classic { -fx-background-color: #C08A2E; -fx-text-fill: white; }
+.badge-popular { -fx-background-color: #B4472B; -fx-text-fill: white; }
+.badge-new     { -fx-background-color: #7E8A3C; -fx-text-fill: white; }
+
+/* Buttons */
+.primary-button {
+    -fx-background-color: #B4472B;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 24;
+    -fx-padding: 10 24;
+    -fx-cursor: hand;
+}
+.primary-button:hover { -fx-background-color: #8F3620; }
+
+.outline-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #8F3620;
+    -fx-border-color: #C97B4A;
+    -fx-border-width: 1.5;
+    -fx-border-radius: 24;
+    -fx-background-radius: 24;
+    -fx-padding: 10 24;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+}
+.outline-button:hover { -fx-background-color: #F3D8BE; }
+
+.icon-button {
+    -fx-background-color: #FFFDF9;
+    -fx-border-color: #E7C9A6;
+    -fx-border-width: 1;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-cursor: hand;
+    -fx-padding: 6 12;
+    -fx-font-size: 16px;
+    -fx-text-fill: #3A2A1F;
+}
+.icon-button:hover { -fx-background-color: #F3D8BE; }
+
+.fav-button {
+    -fx-background-color: #FFFDF9;
+    -fx-border-color: #E7C9A6;
+    -fx-border-width: 1;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-cursor: hand;
+    -fx-padding: 4 8;
+    -fx-font-size: 16px;
+    -fx-text-fill: #6B5749;
+}
+.fav-button:hover { -fx-background-color: #F3D8BE; }
+
+/* Favorited state — soft rose circle with a red heart */
+.fav-active {
+    -fx-background-color: #F6D6C9;
+    -fx-border-color: #E29A82;
+    -fx-text-fill: #C0392B;
+}
+.fav-active:hover { -fx-background-color: #F3C7B6; }
+
+/* Detail view */
+.detail-title  { -fx-font-size: 26px; -fx-font-weight: bold; -fx-text-fill: #3A2A1F; }
+.section-heading { -fx-font-size: 19px; -fx-font-weight: bold; -fx-text-fill: #3A2A1F; }
+.body-text { -fx-font-size: 14px; -fx-text-fill: #3A2A1F; }
+
+.nutrition-cell {
+    -fx-background-color: #FFFDF9;
+    -fx-border-color: #C97B4A;
+    -fx-border-width: 1.5;
+    -fx-border-radius: 12;
+    -fx-background-radius: 12;
+    -fx-padding: 12 18;
+}
+.nutrition-label { -fx-text-fill: #7A6353; -fx-font-size: 13px; }
+.nutrition-value { -fx-text-fill: #3A2A1F; -fx-font-size: 18px; -fx-font-weight: bold; }
+
+.step-number {
+    -fx-background-color: #B4472B;
+    -fx-background-radius: 13;
+    -fx-min-width: 26; -fx-min-height: 26;
+    -fx-max-width: 26; -fx-max-height: 26;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+}
+
+/* Form */
+.form-label { -fx-text-fill: #7A6353; -fx-font-size: 13px; }
+.text-input {
+    -fx-background-color: #FFFDF9;
+    -fx-background-radius: 12;
+    -fx-border-color: #E7C9A6;
+    -fx-border-width: 1;
+    -fx-border-radius: 12;
+    -fx-padding: 8 12;
+    -fx-text-fill: #3A2A1F;
+    -fx-prompt-text-fill: #A08A78;
+}
+.text-input:focused { -fx-border-color: #C97B4A; }
+.combo {
+    -fx-background-color: #FFFDF9;
+    -fx-background-radius: 12;
+    -fx-border-color: #E7C9A6;
+    -fx-border-width: 1;
+    -fx-border-radius: 12;
+}
+
+/* Scroll panes transparent */
+.scroll-pane { -fx-background-color: transparent; -fx-background: transparent; }
+.scroll-pane > .viewport { -fx-background-color: transparent; }
+
+/* Profile card */
+.profile-card {
+    -fx-background-color: #FFFDF9;
+    -fx-background-radius: 22;
+    -fx-padding: 24;
+    -fx-effect: dropshadow(gaussian, rgba(120,80,40,0.12), 12, 0, 0, 4);
+}
+.stat-number { -fx-text-fill: #B4472B; -fx-font-size: 26px; -fx-font-weight: bold; }
+.stat-label  { -fx-text-fill: #7A6353; -fx-font-size: 13px; }
