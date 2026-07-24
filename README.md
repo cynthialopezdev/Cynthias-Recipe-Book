@@ -101,4 +101,4 @@ run and preloaded with sample recipes, so the app is never empty.
 ## 🔗 Submission links
 
 - **GitHub repository:** _add your public repo link here_
-- **Demo video (YouTube, unlisted):** _add your video link here_
+- **Demo video (YouTube, unlisted):** https://youtu.be/0HDdrb3HkE4
