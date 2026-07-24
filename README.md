@@ -100,5 +100,5 @@ run and preloaded with sample recipes, so the app is never empty.
 
 ## 🔗 Submission links
 
-- **GitHub repository:** _add your public repo link here_
-- **Demo video (YouTube, unlisted):** https://youtu.be/0HDdrb3HkE4
+- **GitHub repository:** https://github.com/cynthialopezdev/Cynthias-Recipe-Book
+- **Demo video (YouTube, public):** https://youtu.be/0HDdrb3HkE4
